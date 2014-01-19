@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Massive Tanks</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- css:start -->
+    <link href="client/assets/css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- css:end -->
+  </head>
+  <body>
+    <div class="top-bar">
+      <img id="logo-small" src="client/assets/sprites/logo.png"/>
+      <div class="info-buttons">
+        <p>
+          <span class="info-button">Press space</span><span class="info">to shoot</span>
+        </p>
+        <p>
+          <span class="info-button">Use arrows</span><span class="info">to move</span>
+        </p>
+        <p>
+          <span class="info-button">Press space</span><span class="info">
+           when killed to <span class="respawn">respawn</span></span></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="wrapper">
+      <div id="gameContainer"></div>
+    </div>
+    <div id="footer">
+      <p class="contact gray">Contact: <a href="mailto:massivetanks@gmail.com">massivetanks@gmail.com</a></p>
+      <p><span class="gray">Game by:</span> Tomasz Krug, Piotr Jankowski, Bartosz Augustyn</p>
+    </div>
+  </body>
+  <!-- scripts:plugins:start -->
+  <script type="text/javascript" src="client/vendor/phaser/phaser.js"></script>
+  <script type="text/javascript" src="client/vendor/atmosphere/atmosphere.js"></script>
+  <script type="text/javascript" src="client/vendor/lodash/lodash.min.js"></script>
+  <!-- scripts:plugins:end -->
+  <!-- scripts:app:start -->
+  <!-- Main dependencies -->
+  <script type="text/javascript" src="client/app/app.js"></script>
+  <!-- States -->
+  <script type="text/javascript" src="client/app/state/Boot.js"></script>
+  <script type="text/javascript" src="client/app/state/Game.js"></script>
+  <script type="text/javascript" src="client/app/state/Preload.js"></script>
+  <!-- Game mechanics controllers -->
+  <script type="text/javascript" src="client/app/controller/Collision.js"></script>
+  <script type="text/javascript" src="client/app/controller/Player.js"></script>
+  <!-- Server controller -->
+  <script type="text/javascript" src="client/app/server/Server.js"></script>
+  <script type="text/javascript" src="client/app/server/ServerResponse.js"></script>
+  <!-- Services -->
+  <script type="text/javascript" src="client/app/service/Config.js"></script>
+  <script type="text/javascript" src="client/app/service/Spawner.js"></script>
+  <script type="text/javascript" src="client/app/service/TileType.js"></script>
+  <script type="text/javascript" src="client/app/service/Container.js"></script>
+  <!-- Objects -->
+  <script type="text/javascript" src="client/app/object/Border.js"></script>
+  <script type="text/javascript" src="client/app/object/Bullet.js"></script>
+  <script type="text/javascript" src="client/app/object/Explosion.js"></script>
+  <script type="text/javascript" src="client/app/object/Tank.js"></script>
+  <script type="text/javascript" src="client/app/object/Tile.js"></script>
+  <!-- scripts:app:end -->
+</html>

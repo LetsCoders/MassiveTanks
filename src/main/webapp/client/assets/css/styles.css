@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'Silk';
+    src: url('../fonts/slkscr-webfont.eot');
+    src: url('../fonts/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/slkscr-webfont.woff') format('woff'),
+         url('../fonts/slkscr-webfont.ttf') format('truetype'),
+         url('../fonts/slkscr-webfont.svg#silkscreennormal') format('svg');
+}
+
+body {
+  background: #313131;
+}
+
+#wrapper {
+  font-family: 'Silk', Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#logo {
+  margin: 100px auto 0px;
+  width: 509px;
+  height: 247px;
+  display: block;
+}
+
+.top-bar {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+  .top-bar 
+  #logo-small {
+    width: 290px;
+    display: block;
+    float: left;
+  }
+
+  .top-bar 
+  .info-buttons {
+    padding-top: 20px;
+    width: 350px;
+    float: left;
+  }
+
+  .top-bar 
+  .info-buttons p {
+    margin-bottom: 12px;
+  }
+
+    .top-bar 
+    .info-buttons 
+    span.info {
+      margin-left: 10px;
+      font-family: 'Silk', Helvetica, sans-serif;
+      font-weight: normal;
+      color: #FFF;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .top-bar 
+    .info-buttons 
+    span.respawn {
+      color: #E46C0A;
+    }
+
+    .top-bar 
+    .info-buttons 
+    .info-button {
+        margin: 25px auto 0;
+        padding: 6px;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Silk', Helvetica, sans-serif;
+        font-weight: normal;
+        line-height: 100%;
+        color: #FFF;
+        background: #757575;
+        vertical-align: middle;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        -webkit-transition: background 0.1s ease-in-out;
+        -moz-transition: background 0.1s ease-in-out;
+        -ms-transition: background 0.1s ease-in-out;
+        -o-transition: background 0.1s ease-in-out;
+        transition: background 0.1s ease-in-out;
+        border: 1px solid #CBCBCB;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: 0 4px 0 #212121;
+        -webkit-box-shadow: 0 4px 0 #212121;
+        box-shadow: 0 4px 0 #212121;
+    }
+   
+
+#login {
+  width: 259px;
+  text-align: center;
+  padding: 50px;
+  margin: 10px auto 0;
+  border: 3px solid rgb(88, 88, 88);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 3px 3px 0 #212121;
+  -webkit-box-shadow: 3px 3px 0 #212121;
+  box-shadow: 3px 3px 0 #212121;
+}
+
+    #login 
+    .inputTextHolder 
+    label {
+      display: block;
+      color: #FFF;
+      font-family: 'Silk', Helvetica, sans-serif;
+      margin-bottom: 10px;
+    }
+
+      #login 
+      .inputTextHolder 
+      input {
+        padding: 10px;  
+        margin: 0;
+        width: 100%;
+        font-size: 15px;  
+        font-family: 'Silk', Helvetica, sans-serif;
+        text-shadow: 0px 1px 0px #fff;  
+        border: 3px solid #d0451b;
+        -moz-border-radius: 3px;  
+        border-radius: 3px;  
+        box-shadow: 2px 2px 0px #212121;
+        -moz-box-shadow: 2px 2px 0 #212121;
+        -webkit-box-shadow: 2px 2px 0 #212121;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+      }
+
+      #login 
+      .inputTextHolder 
+      input:focus {
+        -webkit-box-shadow: 0 0 5px #d0451b;  
+        -moz-box-shadow: 0 0 5px #d0451b;  
+        box-shadow: 0 0 5px #d0451b;  
+        outline: none;
+      }
+
+      #login 
+      .inputSubmitHolder 
+      button {
+          display: block;
+          width: 100%;
+          margin: 25px auto 0;
+          padding: 14px 0;
+          text-align: center;
+          text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+          font-size: 14px;
+          font-family: 'Silk', Helvetica, sans-serif;
+          font-weight: normal;
+          color: #FFF;
+          line-height: 100%;
+          background-image: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+          vertical-align: middle;
+          cursor: pointer;
+          transition: background 0.1s ease-in-out;
+          -webkit-transition: background 0.1s ease-in-out;
+          -moz-transition: background 0.1s ease-in-out;
+          -ms-transition: background 0.1s ease-in-out;
+          -o-transition: background 0.1s ease-in-out;
+          border: none;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          -moz-box-shadow: 0 4px 0 #212121;
+          -webkit-box-shadow: 0 4px 0 #212121;
+          box-shadow: 0 4px 0 #212121;
+      }
+
+      #login 
+      .inputSubmitHolder 
+      button:hover {
+        background-image: none;
+        background-color: #870707;
+      }
+
+      #login 
+      .inputSubmitHolder 
+      button:active {
+        position: relative;
+        top: 1px;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      #login .inputSubmitHolder button, 
+      #login .inputSubmitHolder button:hover, 
+      #login .inputSubmitHolder button:active {
+        outline: 0 none;
+        text-decoration: none;
+        color: #FFF;
+      }
+
+
+  #gameContainer 
+  canvas {
+    display: block;
+    margin: 10px auto 0;
+    border: 12px solid rgb(88, 88, 88);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+#footer {
+  font-family: 'Silk', Helvetica, sans-serif;
+  text-align: center;
+  color: gray;
+  width: 100%;
+  margin: 15px auto 0;
+}
+
+  #footer p {
+    margin-bottom: 2px;
+  }
+
+  #footer p.contact {
+    margin: 10px 0;
+  }
+
+  #footer .gray {
+    color: gray;
+  }
+
+  #footer a {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  #footer a:hover {
+    color: gray;
+  }
+
+.clear {
+  clear: both;
+}
