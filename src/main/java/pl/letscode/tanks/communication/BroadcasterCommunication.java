@@ -20,23 +20,21 @@ public class BroadcasterCommunication {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(BroadcasterCommunication.class);
 
-	private final PlayerRepository playerRepository;
 	private final PlayerConnections connections;
 	private final ObjectMapper mapper;
 
 	@Inject
 	public BroadcasterCommunication(PlayerRepository register,
 			PlayerConnections connections) {
-		this.playerRepository = register;
 		this.connections = connections;
 		this.mapper = new ObjectMapper();
 	}
-	
+
 	public void sendTo(Player player, ServerData data) {
 		String json = toJson(data);
 		connections.get(player).getResponse().write(json);
 	}
-	
+
 	public void sendTo(Iterable<Player> players, ServerData data) {
 		String json = toJson(data);
 		for (Player player : players) {
