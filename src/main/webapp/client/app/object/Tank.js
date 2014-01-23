@@ -33,6 +33,8 @@ GameSpace.Tank = function(tankColor, id, name, hp, x, y, facingDir, movementDir)
   } else {
     this.animations.add('move', GameSpace.game.math.numberArray(0, 6));
   }
+  
+  this.update = null;
 };
 
 GameSpace.Tank.prototype = (function() {
@@ -175,8 +177,6 @@ GameSpace.Tank.prototype = (function() {
         explosionSprite.animations.play('explosion', 15, false, true);
       }
       this.tankExplosionSound.play('', 0, 1, false);
-      this.tankNameText.destroy();
-
       GameSpace.container.removeTank(this);
     }
   });

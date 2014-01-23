@@ -19,6 +19,8 @@ GameSpace.Tile = function(id, hp, x, y, tileType) {
 
   this.tSetTileType(tileType);
   this.tSetHp(hp);
+  
+  this.update = this.postUpdate = null;
 };
 
 GameSpace.Tile.prototype = (function() {
@@ -95,9 +97,6 @@ GameSpace.Tile.prototype = (function() {
       explosionSprite.animations.play('explosion', 15, false, true);
 
       GameSpace.container.removeTile(this);
-    },
-    update: null,
-    render: null,
-    postUpdate: null
+    }
   });
 })();

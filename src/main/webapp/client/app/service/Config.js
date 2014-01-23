@@ -17,7 +17,5 @@ GameSpace.config = {
   lifePositionY: 30,
   maxTankHp: 3,
   playerTankColor: 'blue',
-  otherTankColor: 'green',
-  tankNameCorrection: 30,
-  tankNameFont: { font: '12px Arial', fill: "#FFF", align: "center" }
+  otherTankColor: 'green'
 };

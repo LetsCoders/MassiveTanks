@@ -19,10 +19,8 @@ GameSpace.Border = function(x, y, borderSide) {
   } else {
     this.body.setSize(32, GameSpace.config.mapY);
   }
+  
+  this.update = this.postUpdate = null;
 };
 
-GameSpace.Border.prototype = _.extend(Object.create(Phaser.Sprite.prototype), {
-  update: null,
-  render: null,
-  postUpdate: null
-});
+GameSpace.Border.prototype = Object.create(Phaser.Sprite.prototype);

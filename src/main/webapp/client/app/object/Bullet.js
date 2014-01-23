@@ -18,11 +18,10 @@ GameSpace.Bullet = function(id, x, y, facingDir, bulletSpeed) {
   this.bulletHitSound = GameSpace.game.add.audio('hit', 1, true);
   this.bulletSpeed = bulletSpeed;
 
-  this.body.customSeparateX = true;
-  this.body.customSeparateY = true;
-
   this.bSetFacingDirection(facingDir);
   this.bStartMovement();
+  
+  this.update = null;
 };
 
 GameSpace.Bullet.prototype = (function() {
@@ -98,8 +97,6 @@ GameSpace.Bullet.prototype = (function() {
       explosionSprite.animations.play('smallExplosion', 12, false, true);
 
       GameSpace.container.removeBullet(this);
-    },
-    update: null,
-    render: null
+    }
   });
 })();

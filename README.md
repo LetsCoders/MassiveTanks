@@ -1,4 +1,4 @@
-Massive Tanks 1.0
+Massive Tanks 1.01
 =============
 
 Massive Tanks is a classic tanks game remade as an MMO. It's purely browser based on the client side, built with awesome
@@ -47,7 +47,7 @@ Team Members
 
 Contact
 -------------
-If you would like to contact us feel free to use [this](massivetanks@gmail.com) e-mail.
+If you would like to contact us feel free to use **massivetanks@gmail.com** e-mail.
 
 License
 -------------
