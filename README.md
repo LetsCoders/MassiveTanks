@@ -1,4 +1,4 @@
-Massive Tanks 1.01
+Massive Tanks 1.0.2
 =============
 
 Massive Tanks is a classic tanks game remade as an MMO. It's purely browser based on the client side, built with awesome
