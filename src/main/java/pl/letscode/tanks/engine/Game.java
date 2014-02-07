@@ -3,11 +3,12 @@ package pl.letscode.tanks.engine;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Objects;
 
 import org.dyn4j.Listener;
 import org.dyn4j.dynamics.BodyFixture;
 import org.dyn4j.dynamics.World;
+
+import com.google.common.base.Objects;
 
 import pl.letscode.tanks.engine.model.GameModel;
 import pl.letscode.tanks.engine.objects.PhysicsObject;
@@ -157,7 +158,7 @@ public class Game {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(this.id);
+		return Objects.hashCode(this.id);
 	}
 
 	@Override

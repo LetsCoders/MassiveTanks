@@ -1,6 +1,6 @@
 package pl.letscode.tanks.player;
 
-import java.util.Objects;
+import com.google.common.base.Objects;
 
 public class Player {
 
@@ -50,7 +50,7 @@ public class Player {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(this.name);
+		return Objects.hashCode(this.name);
 	}
 
 }
